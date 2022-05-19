@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="content=" width="divce-width," initial-scale="1.0" />
+    <title>leo</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Nanum Gothic", sans-serif;
+      }
+      header {
+        width: auto;
+        height: 80px;
+        /*border: 1px solid yellow;*/
+        margin: auto;
+      }
+
+      #main {
+        width: auto;
+        height: 350px;
+        margin: 10px 0px;
+        /*border: 1px solid yellow;*/
+        background-image: url("2img/main.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      #box1 {
+        width: auto;
+        height: 300px;
+        margin-top: 40px;
+        margin-bottom: 10px;
+        /*border: 1px solid yellow;*/
+        background-image: url("2img/3.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      #box2 {
+        width: 220px;
+        height: 400px;
+        margin: 10px 15px;
+        /*border: 1px solid yellow;*/
+        float: left;
+      }
+      .box3_4-wrap{
+        display: flex;
+        justify-content: center;
+      }
+
+      #box3 {
+        width: 300px;
+        height: 300px;
+        margin: 0 10px;
+        background-image: url("2img/4.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* float: left; */
+      }
+
+      #box4 {
+        width: 400px;
+        height: 300px;
+        margin: 0px 20px;
+        /*border: 1px solid yellow;*/
+        background-image: url("2img/5.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* float: left; */
+      }
+
+      #container {
+        width: auto;
+        height: 2300px;
+        margin-top: 50px;
+        padding: 200px 248px;
+        /*border: 5px solid yellow;*/
+        background-image: url("2img/back.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+
+      /*#box6{
+      width: auto;
+      height: 400px;
+      margin: 10px;
+      background-image: url("2img/45.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }*/
+/* 
+      #box5 {
+        width: 328px;
+        height: 218px;
+        margin: 20px;
+        background-image: url("2img/6.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      } */
+
+      #box7 {
+        position: relative;
+        display: flex;
+        width: 100vw;
+        height: 30px;
+        justify-content: center; 
+        align-items: center;       
+      }
+      #box7 a{
+        position: absolute;
+        bottom: 200px;
+        text-decoration: none;
+        font-weight: 700;
+        color: black;
+        border: 2px solid black;
+        padding: 15px 50px;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <a href="second.html"
+        ><center><img src="2img/home.png" width="96" height="80" /></center
+      ></a>
+    </header>
+
+    <div id="main"></div>
+
+    <div id="box1">
+      <!--content1-->
+    </div>
+
+    <!-- <div id="box2"> -->
+      <!--왼쪽 공간-->
+    <!-- </div> -->
+    <div class="box3_4-wrap">
+      <div id="box3">
+        <!--사자 사진-->
+      </div>
+
+      <div id="box4">
+        <!--사진2-->
+      </div>
+    </div>
+
+    <div id="container">
+      <div id="box5">
+        <!--그리스신화 text-->
+      </div>
+    </div>
+
+    <div id="box7">
+      <a href="third.html">버튼</a>
+    </div>
+  </body>
+</html>
