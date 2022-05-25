@@ -1,167 +1,181 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="content=" width="divce-width," initial-scale="1.0" />
-    <title>leo</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <style>
+      @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
       * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-        font-family: "Nanum Gothic", sans-serif;
+        font-family: "Noto Sans KR", sans-serif;
+      }
+      a {
+        text-decoration: none;
+        color: black;
       }
       header {
-        width: auto;
-        height: 80px;
-        /*border: 1px solid yellow;*/
-        margin: auto;
+        width: 100%;
+        height: 85px;
+        display: flex;
+        justify-content: center;
       }
-
-      #main {
-        width: auto;
+      header h2 {
+        margin: 20px 0;
+        font-size: 30px;
+      }
+      .bg-img {
+        background-image: url("./2img/main.png");
+        width: 100vw;
         height: 350px;
-        margin: 10px 0px;
-        /*border: 1px solid yellow;*/
-        background-image: url("2img/main.png");
         background-position: center;
-        background-repeat: no-repeat;
         background-size: cover;
       }
-
-      #box1 {
-        width: auto;
-        height: 300px;
-        margin-top: 40px;
-        margin-bottom: 10px;
-        /*border: 1px solid yellow;*/
-        background-image: url("2img/3.png");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
+      .leo-contain {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 50px;
       }
-
-      #box2 {
-        width: 220px;
+      .leo-comment {
+        width: 400px;
+        height: 350px;
+      }
+      .leo-bg-img {
+        background-image: url("./2img/4.png");
+        width: 400px;
         height: 400px;
-        margin: 10px 15px;
-        /*border: 1px solid yellow;*/
-        float: left;
+        background-position: center;
+        background-size: cover;
       }
-      .box3_4-wrap{
+      .leo-subtitle {
+        font-size: 13px;
+        font-weight: 500;
+      }
+      .leo-title {
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 30px;
+      }
+      .leo2-contain {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 50px;
+      }
+      .leo2-comment {
+        width: 400px;
+        height: 350px;
+      }
+
+      .leo2-bg-img {
+        background-image: url("./2img/leo2img.gif");
+        width: 400px;
+        height: 400px;
+        background-position: center;
+        background-size: cover;
+      }
+      .leo3-contain {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 50px;
+        margin-bottom: 50px;
+      }
+
+      .leo3-bg-img {
+        background-image: url("./2img/7.png");
+        width: 1170px;
+        height: 400px;
+        /* background-position: center; */
+        background-size: cover;
+      }
+
+      .leo4-contain {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 50px;
+        margin-bottom: 50px;
+      }
+
+      .leo4-bg-img {
+        background-image: url("./2img/9.png");
+        width: 1170px;
+        height: 400px;
+        /* background-position: center; */
+        background-size: cover;
+      }
+
+      /*#box1 {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+      }*/
+
+      #box1{
+        width: 50%;
+        height: 150px;
+        margin-top: 100px;
+        float: left;
         display: flex;
         justify-content: center;
       }
 
-      #box3 {
-        width: 300px;
-        height: 300px;
-        margin: 0 10px;
-        background-image: url("2img/4.png");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        /* float: left; */
-      }
-
-      #box4 {
-        width: 400px;
-        height: 300px;
-        margin: 0px 20px;
-        /*border: 1px solid yellow;*/
-        background-image: url("2img/5.png");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        /* float: left; */
-      }
-
-      #container {
-        width: auto;
-        height: 2300px;
-        margin-top: 50px;
-        padding: 200px 248px;
-        /*border: 5px solid yellow;*/
-        background-image: url("2img/back.png");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: contain;
-      }
-
-      /*#box6{
-      width: auto;
-      height: 400px;
-      margin: 10px;
-      background-image: url("2img/45.png");
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-    }*/
-/* 
-      #box5 {
-        width: 328px;
-        height: 218px;
-        margin: 20px;
-        background-image: url("2img/6.png");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-      } */
-
-      #box7 {
-        position: relative;
-        display: flex;
-        width: 100vw;
-        height: 30px;
-        justify-content: center; 
-        align-items: center;       
-      }
-      #box7 a{
-        position: absolute;
-        bottom: 200px;
-        text-decoration: none;
-        font-weight: 700;
-        color: black;
-        border: 2px solid black;
-        padding: 15px 50px;
-        border-radius: 5px;
-      }
     </style>
+    <title>leo</title>
   </head>
   <body>
     <header>
-      <a href="second.html"
-        ><center><img src="2img/home.png" width="96" height="80" /></center
-      ></a>
+      <a href="./second.html"><h2>LEO</h2></a>
     </header>
-
-    <div id="main"></div>
-
-    <div id="box1">
-      <!--content1-->
+    <div class="bg-img"></div>
+    <div class="leo-contain">
+      <div class="leo-comment">
+        <p class="leo-subtitle">capter1</p>
+        <p class="leo-title">사자자리(LEO)</p>
+        <span class="leo-summary"
+          >4월 25일에 자오선을 통과해 4월 하순에 가장 잘 보인다. 대략적인 위치는
+          지경 10h 30m, 적위 +15°이다. 사자자리의 모습은 백수의왕이라는이름에
+          걸맞게, 하늘 중간에 우아하게 엎드려 누운 사자의 모습이다. 구성하는
+          별도 1등성 레굴루스(’작은 왕’)이라는 뜻이다.
+        </span>
+      </div>
+      <div class="leo-bg-img"></div>
     </div>
-
-    <!-- <div id="box2"> -->
-      <!--왼쪽 공간-->
-    <!-- </div> -->
-    <div class="box3_4-wrap">
-      <div id="box3">
-        <!--사자 사진-->
+    <div class="leo2-contain">
+      <div class="leo2-comment">
+        <p class="leo-subtitle">capter2</p>
+        <p class="leo-title">황도궁 12궁 중 5번째 별자리</p>
+        <span class="leo-summary"
+          >12궁명은 사자중(獅子宮) 으로 7월 23일~8월 22일에 구분된다. 사자의
+          머리에 해당하는 오른쪽 별들은 ‘물음표(?)’ 모양을 돌려놓은 것 같이
+          보이는데, 그 모양 때문에 서양에서는 낫이라고 부른다. 그리스 신화에서는
+          네메아의 황야에 사는 사자로, 헤라클레스에게 퇴치되었다.
+        </span>
+      </div>
+      <div class="leo2-bg-img"></div>
+    </div>
+    <div class="leo3-contain">
+      <div class="leo3-comment">
+        <p class="leo-subtitle">capter3</p>
+        <p class="leo-title">주요 구성별</p>
+        <div class="leo3-bg-img"></div>
+      </div>
+    </div>
+    <div class="leo4-contain">
+        <div class="leo3-comment">
+          <p class="leo-subtitle">capter4</p>
+          <p class="leo-title">계절에 따른 위치</p>
+          <div class="leo4-bg-img"></div>
+        </div>
       </div>
 
-      <div id="box4">
-        <!--사진2-->
-      </div>
-    </div>
-
-    <div id="container">
-      <div id="box5">
-        <!--그리스신화 text-->
-      </div>
-    </div>
-
-    <div id="box7">
-      <a href="third.html">버튼</a>
-    </div>
+    <a href="./third.html" id="box1"><img src="./2img/8.png" alt="" width="50" height="50"></a>
+    <a href="./fourth.html" id="box1"><img src="./2img/8.png" alt="" width="50" height="50"></a>
   </body>
 </html>

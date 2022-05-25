@@ -4,10 +4,79 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>leo</title>
+  <style>
+     @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Noto Sans KR", sans-serif;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+      }
+      header {
+        width: 100%;
+        height: 85px;
+        display: flex;
+        justify-content: center;
+      }
+      header h2 {
+        margin: 20px 0;
+        font-size: 30px;
+      }
+      .bg-img {
+        background-image: url("./3img/main.png");
+        width: 100vw;
+        height: 350px;
+        background-position: center;
+        background-size: cover;
+      }
+      #rome {
+        width: auto;
+        height: 2200px;
+        margin-top: 20px;
+        padding: 200px 248px;
+        /* border: 5px solid yellow; */
+        background-image: url("./3img/rome.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+      .leo-comment {
+        /* border: 5px solid yellow; */
+        margin-top: 80px;
+        width: 400px;
+        height: 350px;
+      }
+      .leo-subtitle {
+        font-size: 13px;
+        font-weight: 500;
+      }
+      .leo-title {
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 30px;
+      }
+  </style>
 </head>
 <body>
-  <h2>세번째 페이지 입니다</h2>
-  <h2>준비중입니다</h2>
+  <header>
+    <a href="./third.html"><h2>LEO</h2></a>
+  </header>
+  <div class="bg-img"></div>
+  <div id="rome">
+    <div class="leo-comment">
+      <p class="leo-subtitle">capter5</p>
+      <p class="leo-title">사자자리 그리스 신화</p>
+      <span class="leo-summary"
+        >이 사자는 영웅 헤라크레스(헤라크레스자리)가 이룬
+        12대업의 첫 번째, 예우리스테오스 왕의 명령으로
+        물리쳤던 네메아의 대사자라고 한다. 
+      </span>
+    </div>
+  </div>
 </body>
 </html>
