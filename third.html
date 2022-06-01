@@ -23,33 +23,59 @@
         display: flex;
         justify-content: center;
       }
+      .header2{
+        width: 100px;
+        height: 25px;
+        /* border: 2px solid blue; */
+        float: right;
+        margin-top: -50px;
+        margin-right: 130px;
+        text-align: center;
+        font-size: 12px;
+      }
+      .header3{
+        width: 100px;
+        height: 25px;
+        /* border: 2px solid blue; */
+        float: right;
+        margin-top: -50px;
+        text-align: center;
+        font-size: 12px;
+        margin-right: 30px;
+      }
       header h2 {
         margin: 20px 0;
         font-size: 30px;
       }
       .bg-img {
-        background-image: url("./3img/main.png");
+        background-image: url("./3img/head.png");
         width: 100vw;
         height: 350px;
         background-position: center;
         background-size: cover;
-      }
-      #rome {
-        width: auto;
-        height: 2200px;
-        margin-top: 20px;
-        padding: 200px 248px;
         /* border: 5px solid yellow; */
-        background-image: url("./3img/rome.png");
+      }
+      .box1{
+        background-image: url("./3img/background3.png");
+        width: 70%;
+        height: 50px;
         background-position: center;
-        background-repeat: no-repeat;
         background-size: contain;
+        background-repeat: no-repeat;
+        margin: 30px auto;
+        /* border: 2px solid blue; */
+      }
+      #main{
+        width: auto;
+        height: 1800px;
+        /* border: 5px solid red; */
       }
       .leo-comment {
         /* border: 5px solid yellow; */
-        margin-top: 80px;
+        margin-top: 40px;
+        margin-left: 180px;
         width: 400px;
-        height: 350px;
+        height: 200px;
       }
       .leo-subtitle {
         font-size: 13px;
@@ -60,22 +86,183 @@
         font-weight: 700;
         margin-bottom: 30px;
       }
+      .contain1{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        float: right;
+        margin-top: -60px;
+        margin-bottom: 30px;
+        margin-right: 100px;
+        /* border: 5px solid red; */
+      }
+      .contain1-img {
+        background-image: url("./3img/content1.png");
+        width: 300px;
+        height: 300px;
+        margin: auto;
+        background-position: center;
+        background-size: cover;
+      }
+      .contain1-text{
+        width: 300px;
+        height: 100px;
+        /* border: 5px solid red; */
+        padding: 10px;
+        margin: 0 auto;
+      }
+      .contain2{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        float: left;
+        margin-top: -150px;
+        margin-bottom: 30px;
+        margin-left: 100px;
+        /* border: 5px solid red; */
+      }
+      .contain2-img {
+        background-image: url("./3img/content2.png");
+        width: 300px;
+        height: 300px;
+        margin: auto;
+        background-position: center;
+        background-size: cover;
+      }
+      .contain2-text{
+        width: 300px;
+        height: 70px;
+        /* border: 5px solid red; */
+        padding: 10px;
+        margin: 0 auto;
+      }
+      .contain3{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        float: right;
+        margin-top: -150px;
+        margin-bottom: 30px;
+        margin-right: 100px;
+        /* border: 5px solid red; */
+      }
+      .contain3-img {
+        background-image: url("./3img/content3.png");
+        width: 300px;
+        height: 300px;
+        margin: auto;
+        background-position: center;
+        background-size: cover;
+      }
+      .contain3-text{
+        width: 320px;
+        height: 100px;
+        /* border: 5px solid red; */
+        padding: 5px;
+        margin: 0 auto;
+      }
+      .contain4{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        float: left;
+        margin-top: -150px;
+        margin-bottom: 30px;
+        margin-left: 100px;
+        /* border: 5px solid red; */
+      }
+      .contain4-img {
+        background-image: url("./3img/content4.png");
+        width: 300px;
+        height: 300px;
+        margin: auto;
+        background-position: center;
+        background-size: cover;
+      }
+      .contain4-text{
+        width: 300px;
+        height: 90px;
+        padding: 10px;
+        margin: 0 auto;
+      }
+      .contain5{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        float: right;
+        margin-top: -150px;
+        margin-bottom: 30px;
+        margin-right: 100px;
+        /* border: 5px solid red; */
+      }
+      .contain5-img {
+        background-image: url("./3img/content5.png");
+        width: 300px;
+        height: 300px;
+        margin: auto;
+        background-position: center;
+        background-size: cover;
+      }
+      .contain5-text{
+        width: 300px;
+        height: 70px;
+        /* border: 5px solid red; */
+        padding: 10px;
+        margin: 0 auto;
+      }
   </style>
 </head>
 <body>
   <header>
     <a href="./third.html"><h2>LEO</h2></a>
   </header>
+  <a href="./second.html"><div class="header2">사자자리정보</div></a>
+  <a href="./fourth.html"><div class="header3">사자자리특징</div></a>
   <div class="bg-img"></div>
-  <div id="rome">
+  <div class="box1"></div>
+  <div id="main">
     <div class="leo-comment">
       <p class="leo-subtitle">capter5</p>
       <p class="leo-title">사자자리 그리스 신화</p>
       <span class="leo-summary"
-        >이 사자는 영웅 헤라크레스(헤라크레스자리)가 이룬
+        >이 사자는 영웅 헤라클레스(헤라클레스자리)가 이룬
         12대업의 첫 번째, 예우리스테오스 왕의 명령으로
         물리쳤던 네메아의 대사자라고 한다. 
       </span>
+    </div>
+    <div class="contain1">
+      <div class="contain1-img"></div>
+      <div class="contain1-text">제우스와 알크메네 사이에서 태어난 헤라클레스는 
+        제우스의 아내 헤라의 미움을 받아 12가지의 모험을 
+        해야했다.</div>
+    </div>
+    <div class="contain2">
+      <div class="contain2-img"></div>
+      <div class="contain2-text">그 중 첫 번째가 네메아 사람들에게 많은 고통을 준 
+        사자를 죽이는 일</div>
+    </div>
+    <div class="contain3">
+      <div class="contain3-img"></div>
+      <div class="contain3-text">헤라클레스는 활과 창, 방망이 등을 사용해 사자와 
+        싸워보았지만 어떤 무기로도 사자를 이길 수 없었다.
+        결국 무기를 다 버리고 생사를 가르는 격투를 벌인 
+        끝에 사자를 물리쳤다.</div>
+    </div>
+    <div class="contain4">
+      <div class="contain4-img"></div>
+      <div class="contain4-text">그 후 네메아 사람들은 사자의 공포에서 벗어나 평온을 
+        되찾고, 헤라클레스는 어떤 무기로도 뚫을 수 없는 
+        사자 가죽을 얻게 되었다.</div>
+    </div>
+    <div class="contain5">
+      <div class="contain5-img"></div>
+      <div class="contain5-text">제우스는 헤라클레스의 용맹을 기리기 위해 사자를 
+        별자리로 만들었다.</div>
     </div>
   </div>
 </body>

@@ -2,7 +2,7 @@
 <html>
  <head>
     <meta charset="utf-8">
-    <meta name=" content=" width=device-width, initial-scale=1.0">
+    <meta name=" content=" width=device-width, initial-scale=1.0>
     <title>LEO</title>
    <style>
      * {
@@ -11,15 +11,23 @@
   box-sizing: border-box;
 }
      body{
-       background-image: url("1img/first.png")
+       background-image: url("1img/first.png");
+       overflow: hidden;
+       width: 100vw;
+       height: 100vh;
+
      }
 
 #box {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#box a{
   position: absolute;
-  width: 365px;
-  height: 250px;
-  float: right;
-  margin: 250px 570px;
 }
 
 
