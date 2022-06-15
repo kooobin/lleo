@@ -30,7 +30,7 @@
         display: flex;
         justify-content: center;
       }
-      .header2{
+      .header2 {
         width: 100px;
         height: 25px;
         /* border: 2px solid blue; */
@@ -40,7 +40,7 @@
         text-align: center;
         font-size: 12px;
       }
-      .header3{
+      .header3 {
         width: 100px;
         height: 25px;
         /* border: 2px solid blue; */
@@ -61,22 +61,22 @@
         background-position: center;
         background-size: cover;
       }
-      .box1{
+      .box1 {
         background-image: url("./2img/background1.png");
-        width: 100%;
-        height: 600px;
+        width: 100vw;
+        height: 610px;
         background-position: center;
-        background-size: contain;
+        background-size: cover;
         background-repeat: no-repeat;
         margin-top: 30px;
         /* border: 2px solid blue; */
       }
-      .box2{
+      .box2 {
         background-image: url("./2img/background2.png");
         width: 100%;
-        height: 600px;
+        height: 610px;
         background-position: center;
-        background-size: contain;
+        background-size: cover;
         background-repeat: no-repeat;
         margin-top: -500px;
         /* border: 2px solid blue; */
@@ -125,19 +125,50 @@
         background-position: center;
         background-size: cover;
       }
+
+      /* .leo3-contain {
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        margin: 60px auto;
+      }
+
+      .leo3-wrap {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+      } */
+
+      /* .leo3-bg-wrap2 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      } */
+      /* 
+      .leo3-bg-wrap img {
+        width: 75%;
+      } */
+
+      /* .leo3-bg-img {
+        background-image: url("./2img/7.png");
+        width: 1170px;
+        height: 400px;
+        background-position: center;
+        background-size: cover;
+      } */
       .leo3-contain {
         width: 100%;
         display: flex;
         justify-content: space-around;
         margin-top: 60px;
         margin-bottom: 60px;
+        /* border: 5px solid red; */
       }
-
       .leo3-bg-img {
         background-image: url("./2img/7.png");
         width: 1170px;
         height: 400px;
-        /* background-position: center; */
+        background-position: center;
         background-size: cover;
       }
 
@@ -153,7 +184,7 @@
         background-image: url("./2img/9.png");
         width: 1170px;
         height: 400px;
-        /* background-position: center; */
+        background-position: center;
         background-size: cover;
       }
 
@@ -164,7 +195,7 @@
         justify-content: center;
       }*/
 
-      #box1{
+      #box1 {
         width: 50%;
         height: 150px;
         margin-top: 100px;
@@ -172,7 +203,7 @@
         display: flex;
         justify-content: center;
       }
-      #box2{
+      #box2 {
         width: 100%;
         height: 350px;
         margin-top: 20px;
@@ -181,7 +212,7 @@
         /* border: 5px solid yellow; */
         background-color: gray;
       }
-      #box3{
+      #box3 {
         width: 30%;
         height: 350px;
         margin: auto;
@@ -189,6 +220,61 @@
         background-color: gray;
       }
 
+      @media screen and (max-width: 1280px) {
+        .leo-contain .leo-bg-img {
+          width: 33vw;
+          height: 33vw;
+        }
+        .leo2-contain .leo2-bg-img {
+          width: 33vw;
+          height: 33vw;
+        }
+        .leo3-contain .leo3-bg-img {
+          display: flex;
+          width: 90vw;
+          height: 33vw;
+        }
+        .leo4-contain .leo4-bg-img {
+          display: flex;
+          width: 90vw;
+          height: 33vw;
+        }
+      }
+      .bottom {
+        width: 100%;
+        height: 30px;
+        margin-top: 50px;
+        background-color: #292929;
+      }
+      .bottom1 {
+        width: 100%;
+        height: 120px;
+        background-color: #292929;
+        float: right;
+        padding: 40px;
+        text-align: center;
+        color: #545454;
+        font-size: 10.5px;
+      }
+      .line2 {
+        width: 100%;
+        border-bottom: 0.1px solid gray;
+        opacity: 50%;
+      }
+      .bottom6 {
+        width: 100%;
+        height: 120px;
+        background-color: #292929;
+        /* border: 2px solid red; */
+        padding: 12px;
+        /* margin-right: 200px; */
+        height: 46px;
+        font-size: 12px;
+        text-align: center;
+        font-weight: 400;
+        color: #545454;
+        /* opacity: 80%; */
+      }
     </style>
     <title>leo</title>
   </head>
@@ -217,8 +303,8 @@
       <div class="leo2-comment">
         <p class="leo-subtitle">capter2</p>
         <p class="leo-title">황도궁 12궁 중 5번째 별자리</p>
-        <span class="leo-summary"
-          >12궁명은 사자중(獅子宮) 으로 7월 23일~8월 22일에 구분된다. 사자의
+        <span class="leo-summary">
+          12궁명은 사자중(獅子宮) 으로 7월 23일~8월 22일에 구분된다. 사자의
           머리에 해당하는 오른쪽 별들은 ‘물음표(?)’ 모양을 돌려놓은 것 같이
           보이는데, 그 모양 때문에 서양에서는 낫이라고 부른다. 그리스 신화에서는
           네메아의 황야에 사는 사자로, 헤라클레스에게 퇴치되었다.
@@ -226,24 +312,51 @@
       </div>
       <div class="leo2-bg-img"></div>
     </div>
+
     <div class="leo3-contain">
-      <div class="leo3-comment">
+      <div class="leo3-commet">
         <p class="leo-subtitle">capter3</p>
         <p class="leo-title">주요 구성별</p>
         <div class="leo3-bg-img"></div>
       </div>
     </div>
-    <div class="leo4-contain">
-        <div class="leo3-comment">
-          <p class="leo-subtitle">capter4</p>
-          <p class="leo-title">계절에 따른 위치</p>
-          <div class="leo4-bg-img"></div>
+
+    <!-- <div class="leo3-contain">
+      <div class="leo3-comment">
+        <div class="leo3-bg-wrap2">
+          <div class="leo3-bg-wrap">
+            <p class="leo-subtitle">capter3</p>
+            <p class="leo-title">주요 구성별</p>
+            <img src="./2img/7.png" alt="" />
+          </div>
         </div>
       </div>
-      <div class="box2"></div>
+    </div> -->
+
+    <div class="leo4-contain">
+      <div class="leo3-comment">
+        <p class="leo-subtitle">capter4</p>
+        <p class="leo-title">계절에 따른 위치</p>
+        <div class="leo4-bg-img"></div>
+      </div>
+    </div>
+    <div class="box2"></div>
 
     <!-- <a href="./third.html" id="box1"><img src="./2img/8.png" alt="" width="50" height="50"></a> -->
     <!-- <a href="./fourth.html" id="box1"><img src="./2img/8.png" alt="" width="50" height="50"></a> -->
-    <div id="box2"><a href="./third.html" id="box3"></a></div>
+    <!-- <div id="box2"><a href="./third.html" id="box3"></a></div> -->
+    <div class="bottom"></div>
+    <div class="line2"></div>
+    <div class="bottom6">
+      <pre>
+메인화면    ׀    사자자리정보    ׀    그리스로마신화    ׀    사자자리특징</pre
+      >
+    </div>
+    <div class="line2"></div>
+    <div class="bottom1">
+      (44610) 울산광역시 남구 대학로 93 울산대학교 Tel: 052-277-3101~3
+      <br /><br />
+      Copyright© 2022 All rights reserved by 구다빈
+    </div>
   </body>
 </html>

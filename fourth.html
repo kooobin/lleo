@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>leo</title>
     <style>
-         @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
       * {
         margin: 0;
         padding: 0;
@@ -27,7 +27,7 @@
         margin: 20px 0;
         font-size: 30px;
       }
-      .header2{
+      .header2 {
         width: 100px;
         height: 25px;
         /* border: 2px solid blue; */
@@ -37,7 +37,7 @@
         text-align: center;
         font-size: 12px;
       }
-      .header3{
+      .header3 {
         width: 100px;
         height: 25px;
         /* border: 2px solid blue; */
@@ -47,13 +47,375 @@
         font-size: 12px;
         margin-right: 30px;
       }
+      .bg-img {
+        background-image: url("./2img/main.png");
+        width: 100vw;
+        height: 350px;
+        background-position: center;
+        background-size: cover;
+      }
+      .bottom {
+        width: 100%;
+        height: 30px;
+        margin-top: 50px;
+        background-color: #292929;
+      }
+      .bottom1 {
+        width: 100%;
+        height: 120px;
+        background-color: #292929;
+        float: right;
+        padding: 40px;
+        text-align: center;
+        color: #545454;
+        font-size: 10.5px;
+      }
+      .line2 {
+        width: 100%;
+        border-bottom: 0.1px solid gray;
+        opacity: 50%;
+      }
+      .bottom6 {
+        width: 100%;
+        height: 120px;
+        background-color: #292929;
+        /* border: 2px solid red; */
+        padding: 12px;
+        /* margin-right: 200px; */
+        height: 46px;
+        font-size: 12px;
+        text-align: center;
+        font-weight: 400;
+        color: #545454;
+        /* opacity: 80%; */
+      }
+      .menu {
+        width: 100%;
+        height: 55px;
+        /* border: 2px solid red; */
+        float: right;
+        padding: 8px 0px 0px 8px;
+      }
+      .boxicon {
+        width: 8%;
+        height: 40px;
+        /* border: 2px solid red; */
+        text-align: center;
+        padding: 8px;
+        font-weight: 550;
+        font-size: small;
+        margin-left: 205px;
+        float: left;
+      }
+      .content {
+        width: 100%;
+        height: 740px;
+        background-color: #ededed;
+        margin-top: 55px;
+      }
+      .content2 {
+        width: 100%;
+        height: 740px;
+        background-color: #ffffff;
+        /* border: 2px solid red; */
+      }
+      .leo-comment {
+        /* border: 2px solid yellow; */
+        margin-top: 55px;
+        margin-left: 180px;
+        width: 400px;
+        height: 80px;
+        float: left;
+      }
+      .leo-subtitle {
+        font-size: 13px;
+        font-weight: 500;
+      }
+      .leo-title {
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 5px;
+      }
+      .clear {
+        clear: both;
+      }
+      .section {
+        width: 800px;
+        height: 450px;
+        /* border: 2px solid red; */
+        margin: auto;
+        margin-top: 10px;
+      }
+      .section2 {
+        width: 800px;
+        height: 450px;
+        /* border: 2px solid blue; */
+        margin: auto;
+        margin-top: 30px;
+        background-color: #272632;
+      }
+      .videobox {
+        width: 440px;
+        height: 430px;
+        /* border: 2px solid blue; */
+        margin-left: 10px;
+        margin-top: 10px;
+        float: left;
+      }
+      .textbox {
+        width: 340px;
+        height: 450px;
+        /* border: 2px solid blue; */
+        margin-left: 10px;
+        float: left;
+        padding: 110px 20px;
+        background-color: #272632;
+        color: lightgray;
+        font-size: 13px;
+      }
+      .circle-wrap {
+        display: flex;
+        width: 100vw;
+        align-items: center;
+      }
+      .circlebox {
+        width: 440px;
+        height: 440px;
+        /* border: 2px solid blue; */
+        margin-top: 40px;
+        margin-left: 50px;
+      }
+      .circletext {
+        width: 600px;
+        height: 345px;
+        /* border: 2px solid blue; */
+        margin-left: 90px;
+        margin-top: 40px;
+        color: black;
+        font-size: 13px;
+        padding: 20px;
+      }
+      .circletext1 {
+        width: 600px;
+        height: 330px;
+        /* border: 2px solid blue; */
+        margin-left: 90px;
+        margin-top: 40px;
+        color: black;
+        font-size: 13px;
+        padding: 20px;
+      }
+      .section input[id*="slide"] {
+        display: none;
+      }
+      .section .slidewrap {
+        max-width: 800px;
+        margin: 0 auto;
+        overflow: hidden;
+      }
+      .section .slidelist {
+        white-space: nowrap;
+        font-size: 0;
+      }
+      .section .slidelist > li {
+        display: inline-block;
+        vertical-align: middle;
+        width: 100%;
+        transition: all 0.5s;
+      }
+      .section .slidelist > li > a {
+        display: block;
+        position: relative;
+      }
+      .section .slidelist > li > a img {
+        width: 100%;
+      }
+      .section .slidelist label {
+        position: absolute;
+        z-index: 10;
+        top: 50%;
+        transform: translateY(-50%);
+        padding: 50px;
+        cursor: pointer;
+      }
+      .section .slidelist .left {
+        left: 30px;
+        background: url("4img/left.png") center center / 100% no-repeat;
+      }
+      .section .slidelist .right {
+        right: 30px;
+        background: url("4img/right.png") center center / 100% no-repeat;
+      }
+      .section [id="slide01"]:checked ~ .slidewrap .slidelist > li {
+        transform: translateX(0%);
+      }
+      .section [id="slide02"]:checked ~ .slidewrap .slidelist > li {
+        transform: translateX(-100%);
+      }
+      .section [id="slide03"]:checked ~ .slidewrap .slidelist > li {
+        transform: translateX(-200%);
+      }
+      .section [id="slide04"]:checked ~ .slidewrap .slidelist > li {
+        transform: translateX(-300%);
+      }
+      .section [id="slide05"]:checked ~ .slidewrap .slidelist > li {
+        transform: translateX(-400%);
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <a href="./fourth.html"><h2>LEO</h2></a>
+      <a href="./fourth.html"><h2>LEO</h2></a>
     </header>
     <a href="./second.html"><div class="header2">사자자리정보</div></a>
     <a href="./third.html"><div class="header3">그리스로마신화</div></a>
-</body>
+    <div class="bg-img"></div>
+    <div class="menu">
+      <a href="#sec1"><div class="boxicon">사자자리 특징</div></a>
+      <a href="#sec2"><div class="boxicon">남자 특징</div></a>
+      <a href="#sec3"><div class="boxicon">여자 특징</div></a>
+      <a href="#sec4"><div class="boxicon">돈과 성공</div></a>
+    </div>
+    <div class="content" id="sec1">
+      <div class="leo-comment">
+        <p class="leo-subtitle">capter6</p>
+        <p class="leo-title">사자자리 특징</p>
+        <span class="leo-summary"></span>
+      </div>
+      <div class="clear"></div>
+      <div class="section">
+        <input type="radio" name="slide" id="slide01" checked />
+        <input type="radio" name="slide" id="slide02" />
+        <input type="radio" name="slide" id="slide03" />
+        <input type="radio" name="slide" id="slide04" />
+        <input type="radio" name="slide" id="slide05" />
+        <div class="slidewrap">
+          <ul class="slidelist">
+            <li>
+              <a>
+                <label for="slide05" class="left"></label>
+                <img src="4img/xmrwld1.png" />
+                <label for="slide02" class="right"></label>
+              </a>
+            </li>
+            <li>
+              <a>
+                <label for="slide01" class="left"></label>
+                <img src="4img/xmrwld2.png" />
+                <label for="slide03" class="right"></label>
+              </a>
+            </li>
+            <li>
+              <a>
+                <label for="slide02" class="left"></label>
+                <img src="4img/xmrwld3.png" />
+                <label for="slide04" class="right"></label>
+              </a>
+            </li>
+            <li>
+              <a>
+                <label for="slide03" class="left"></label>
+                <img src="4img/xmrwld4.png" />
+                <label for="slide05" class="right"></label>
+              </a>
+            </li>
+            <li>
+              <a>
+                <label for="slide04" class="left"></label>
+                <img src="4img/xmrwld5.png" />
+                <label for="slide01" class="right"></label>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="content2" id="sec2">
+      <div class="leo-comment">
+        <p class="leo-subtitle">capter6</p>
+        <p class="leo-title">남자 특징</p>
+        <span class="leo-summary"> 사자자리 남자 특징 </span>
+        <div class="clear"></div>
+        <div class="circle-wrap">
+          <div class="circlebox">
+            <img src="4img/skawk.png" alt="skawk" width="440" height="440">
+          </div>
+          <div class="circletext">
+            1. 강한 자신감과 곤란을 극복하는 끈기가 있고 자신 생각만이 절대적이라고 믿는 강한 개성을 가지고 있습니다. <br><br>
+            2. 불가능이란 없다는 신념을 갖고 있으므로 어떠한 난관에 부딪히더라고 포기하기보다는 의연히 헤쳐 나가는 타입입니다. <br><br>
+            3. 뚜렷한 개성이 있지만 당당한 성격 때문에 주위에 많은 사람들이 따르게 되며 지도력 뛰어난 편입니다. <br><br>
+            4. 다른 사람의 지배나 명령 지시 받기를 싫어하며 매사 자기 위주로 하려는 경향이 많습니다. <br><br>
+            5. 인생이 비약적으로 굴곡이 심한 편이어서 일찍이 재물을 모을 수 있으나 실패도 3, 4번은 하게 됩니다. <br><br>
+            6. 강직하고 독선적인 성격으로 여러 사람에게 인정도 받지만 그만큼 적들도 많습니다. <br><br>
+            7. 좋아하는 여성에게는 애정 표시가 능숙하지 않기 때문에 자신의 깊은 애정을 전달 못하고 애태우는 편입니다. <br><br>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="content" id="sec3">
+      <div class="leo-comment">
+        <p class="leo-subtitle">capter6</p>
+        <p class="leo-title">여자 특징</p>
+        <span class="leo-summary"> 사자자리 여자 특징 </span>
+        <div class="clear"></div>
+        <div class="circle-wrap">
+          <div class="circlebox">
+            <img src="4img/duwk.png" alt="duwk" width="440" height="440">
+          </div>
+          <div class="circletext1">
+            1. 칭찬하는 말에는 터무니없게 약하고 바로 우쭐대는 기분이 되어 버립니다. <br> <br>
+            2. 깊은 애정을 품고 있어 친구들의 신뢰를 가득 받는 형입니다. <br> <br>
+            3. 본인의 모든 성질이 좋던 나쁘던 표출하기 때문에 주목받는 사람입니다. <br> <br>
+            4. 인기도 많고 눈에 띄게 치솟는 인물이며 상대가 연상이라 할지라도 절대 고개를 숙이지 않습니다. <br> <br>
+            5. 무섭거나 두려운 것이 없는 영웅 타입이며 자신이 주도권을 잡아야 직성이 풀립니다. <br> <br>
+            6. 자신이 주목받지 못한다고 생각할 때는 슬럼프에 빠집니다. <br> <br>
+            7.자신이 중심이라면 최고의 기분으로 행복감을 느낍니다. <br> <br>
+            8. 스타일도 좋고 눈에 띄는 몸매이며 긴 머리가 어울리는 미인 유형입니다. <br> <br>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="content2" id="sec4">
+      <div class="leo-comment">
+        <p class="leo-subtitle">capter6</p>
+        <p class="leo-title">돈과 성공</p>
+        <span class="leo-summary"> 사자자리의 돈과 성공 </span>
+      </div>
+      <div class="clear"></div>
+      <div class="section2">
+        <div class="videobox">
+          <video
+            src="4img/moneydance_1.mp4"
+            width="440"
+            height="430"
+            autoplay
+            loop
+          ></video>
+        </div>
+        <div class="textbox">
+          1. 강한 자신감과 곤란을 극복하는 끈기를 가지고 있습니다. <br /><br />
+          2. 일가를 부흥시키는 엄청난 재주를 가지고 있습니다. <br /><br />
+          3. 극히 어려운 역경에는 잘 버티는 편이지만 좋은 환경이나 조용한
+          사람에겐 약합니다. <br /><br />
+          4. 사람을 끄는 매력이 많으므로 이점을 살리는 직업을 택해야 합니다.
+          <br /><br />
+          5. 판단력, 개척력, 아이디어가 뛰어나므로 벤처와 유행에 민감한 사업에서
+          두각을 드러냅니다. <br /><br />
+        </div>
+      </div>
+    </div>
+    <div class="bottom"></div>
+    <div class="line2"></div>
+    <div class="bottom6">
+      <pre>
+메인화면    ׀    사자자리정보    ׀    그리스로마신화    ׀    사자자리특징</pre
+      >
+    </div>
+    <div class="line2"></div>
+    <div class="bottom1">
+      (44610) 울산광역시 남구 대학로 93 울산대학교 Tel: 052-277-3101~3
+      <br /><br />
+      Copyright© 2022 All rights reserved by 구다빈
+    </div>
+  </body>
 </html>
